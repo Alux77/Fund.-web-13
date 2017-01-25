@@ -1,0 +1,45 @@
+.container {
+  margin: 40px auto;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  color: black;
+  opacity: 1;
+}
+
+li, h2 {
+  color: red;
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  opacity: .5;
+}
+
+h5 {
+  font-family: 'Poppins', sans-serif;
+  color: black;
+  opacity: .7;
+}
+
+form, p {
+  font-family: 'Poppins', sans-serif;
+  color: black;
+}
+
+span {
+  display: none;
+}
+
+input {
+  border-spacing: 30px;
+}
+
+::-webkit-input-placeholder {
+   color: black;
+   opacity: .2;
+   text-align: center;
+}

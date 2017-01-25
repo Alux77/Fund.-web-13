@@ -1,0 +1,55 @@
+ <head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  <script>
+$(document).ready(function(){
+    $("#f1").click(function(){
+    $("#form1").slideToggle(1500);
+    });
+});
+
+$(document).ready(function(){
+    $("#f2").click(function(){
+    $("#form2").slideToggle(1500);
+    });
+});
+
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Medula+One|Play|Poppins" rel="stylesheet"></head>
+
+<body id='gradient' style="background-color:#FFB200;"></body>
+
+  <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/109195-200.png" alt="logo" style="width:90px;height:90px;">
+    <h1>[USERS MODEL APP]</h1>
+    <p><sup>users exercise : by alux : 2017</sup></p>
+
+<center><table cellpadding="20">
+  <tr>
+<!-- imagen de sign up -->
+    <td><input id='f1' type="image" src="https://lh3.googleusercontent.com/oyQV39XKolkRtIldx6N_uom6TeG2i2mCdTbWnBTr4W0NVYh-bMEbHIqV9pgTrt8yrHZI=w300" alt="logo" style="width:90px;height:90px;">
+    <br>
+    <h5><sup><center>&#8867; SIGN UP &#8866;</center></sup></h5>
+    </td>
+
+  <!-- imagen de log in -->
+    <td><input id='f2' type="image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Creative-Tail-astronaut.svg/2000px-Creative-Tail-astronaut.svg.png" alt="logo" style="width:90px;height:90px;">
+    <br>
+    <h5><sup><center>&#8867; LOG IN &#8866;</center></sup></h5>
+    </td>
+
+  </tr>
+</table></center>
+
+<% if @user %>
+<% if @user.errors.any? %>
+<% @user.errors.full_messages.each do |msg| %>
+  <li>
+    <h2><%= msg %></h2>
+  </li>
+<% end %>
+<% end %>
+<% end %>
+
+<span id='form1'><%= erb :sign_up %></span>
+<span id='form2'><%= erb :log_in %></span>

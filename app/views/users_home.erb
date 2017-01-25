@@ -1,0 +1,38 @@
+<head>
+
+  <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Medula+One|Play|Poppins" rel="stylesheet"></head>
+
+<body style="background-color:#FFB200;">
+
+  <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/109195-200.png" alt="logo" style="width:90px;height:90px;">
+    <h1>[USERS MODEL APP]</h1>
+    <p><sup>users exercise : by alux : 2017</sup></p>
+
+    <br>
+    <br>
+    <br>
+
+  <h3>&#8867; "Welcome &lsaquo;<%= @user.user.upcase %>&rsaquo; to your count" &#8866;</h3>
+  <p><sup>YOUR PERSONAL & PRIVATE INFORMATION ARE:</sup></p>
+  <p><sup>USER: <%= @user.user %> &#9632; EMAIL: <%= @user.email %> &#9632; PASSWORD: <%= @user.password %></sup></p>
+ <!--  <p><sup>EMAIL: <%= @user.email %></sup></p>
+  <p><sup>PASSWORD: <%= @user.password %></sup></p> -->
+
+<center><table cellpadding="20">
+  <tr>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <td>
+    <form id='form_users' action="/logout" method="post">
+      <input type="image" src="http://www.clipartster.com/images/49/episcopal-archbishop-opens-door-to-church-schools-admissions-reform-iwxjyk-clipart.png" alt="logo" style="width:90px;height:90px;">
+    <br>
+      <h5><sup><center>&#8867; LOG OUT &#8866;</center></sup></h5>
+    </td>
+  </tr>
+</table></center>
+
+</body>
